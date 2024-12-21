@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>WORKSTUDIO | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="ico/favicon.ico" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <nav class="header-nav">
+        <div class="container-1440-header">
+          <!-- Логотип -->
+          <div class="logo">
+            <a href="index.html"
+              ><span class="logo-web">WEB</span
+              ><span class="logo-studio">STUDIO</span>
+            </a>
+          </div>
+
+          <!--Навігація Studio-Portfolio-Contacts -->
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" class="nav-list-inactive-studio">Studio</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="nav-list-active-portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-list-contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- Пошта та Номер -->
+          <div class="information">
+            <span class="information-email">info@devstudio.com</span>
+            <span class="information-number">+11 (000) 111-111-11</span>
+          </div>
+          <!--Гамбургер-->
+          <div class="mob-hamburger" id="mob-hamburger">
+            <img src="ico/burger-menu.svg" alt="Hamburger" />
+          </div>
+          <!-- Кнопка закриття -->
+          <button class="nav-mob-close-btn" id="nav-mob-close-btn">
+            &times;
+          </button>
+
+          <!-- Меню -->
+          <div class="nav-mob-wrapper" id="nav-mob-wrapper">
+            <ul class="nav-mob-list">
+              <li class="nav-mob-inactive-studio">
+                <a href="index.html">Studio</a>
+              </li>
+              <li class="nav-mob-active-portfolio">
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-mob-contacts">
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+            <div class="nav-mob-info">
+              <span class="nav-mob-number">+11 (000) 111-11-11</span>
+              <span class="nav-mob-email">info@devstudio.com</span>
+            </div>
+            <div class="nav-mob-icons">
+              <a href="#"
+                ><img src="ico/mob-menu-instagtram.svg" alt="instagra"
+              /></a>
+              <a href="#"
+                ><img src="ico/mob-menu-twitter.svg" alt="twitter"
+              /></a>
+              <a href="#"
+                ><img src="ico/mob-menu-facebook.svg" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="ico/mob-menu-linked.svg" alt="linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Main-->
+    <main>
+      <section class="button-section">
+        <div class="container">
+          <div class="button-section-wrapper">
+            <button class="button-section-button button-section-active">
+              All
+            </button>
+            <button class="button-section-button button-section-un-active">
+              Web Site
+            </button>
+            <button class="button-section-button button-section-un-active">
+              App
+            </button>
+            <button class="button-section-button button-section-un-active">
+              Design
+            </button>
+            <button class="button-section-button button-section-un-active">
+              Marketing
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-heading">
+              <img src="ico/logo_light.svg" alt="logo" class="footer-logo" />
+              <p class="footer-description">
+                Increase the flow of customers and sales for your business with
+                digital marketing & growth solutions.
+              </p>
+            </div>
+            <div class="footer-social">
+              <p class="footer-social-heading">Social media</p>
+              <div class="footer-social-logos-wrapper">
+                <div class="footer-social-logo">
+                  <img src="ico/instagram2.svg" alt="instagram2" />
+                </div>
+                <div class="footer-social-logo">
+                  <img src="ico/twitter1.svg" alt="twitter1" />
+                </div>
+                <div class="footer-social-logo">
+                  <img src="ico/facebook1.svg" alt="facebook1" />
+                </div>
+                <div class="footer-social-logo">
+                  <img src="ico/linkedin1.svg" alt="linkedin1" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-subscribe">
+            <p class="footer-subscribe-heading">Subscribe</p>
+            <div class="footer-subscribe-wrapper">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="footer-subscribe-email"
+              />
+              <button class="footer-subscribe-button">
+                <p class="footer-subscribe-button-text">Subscribe</p>
+                <img
+                  src="ico/frame3.svg"
+                  alt="telega"
+                  class="footer-subscribe-button-image"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

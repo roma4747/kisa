@@ -1,0 +1,43 @@
+@import "./base/normalize";
+@import "./base/variables";
+@import "./base/container";
+@import "./layout/order-section";
+@import "./layout/features-section";
+@import "./layout/button-section";
+@import "./layout/footer";
+@import "./components/dialog";
+@import "./layout/header";
+@import "./components/logo";
+@import "./components/mob-menu";
+@import "./components/navigation";
+@import "./components/contacts";
+@import "./components/portfolio-button";
+@import "./base/dialog-container";
+@import "./utils/hidden";
+
+body {
+  box-sizing: border-box;
+}
+
+#body-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-right: 18px;
+  padding-left: 18px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--navy-blue-modal);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#body-overlay.show,
+.dialog.show {
+  opacity: 1;
+  pointer-events: auto;
+}

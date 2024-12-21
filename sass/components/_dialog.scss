@@ -1,0 +1,139 @@
+.dialog {
+  & {
+    padding: 24px;
+    left: 50%;
+    top: 50%;
+    background: var(--dairy);
+    border-radius: 4px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &-close-button {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 24px;
+  }
+
+  &-heading {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    padding-bottom: 16px;
+  }
+
+  &-form-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
+    padding-bottom: 4px;
+    padding-top: 8px;
+  }
+
+  &-form-wrapper {
+    border: 1px solid var(--navy-blue-modal);
+    border-radius: 4px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &-form-icon {
+    width: 18px;
+    height: 24px;
+    padding-right: 5px;
+    border-right: 1px solid var(--navy-blue);
+  }
+
+  &-form-input {
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  &-comment-wrapper {
+    border: 1px solid var(--navy-blue-modal);
+    border-radius: 4px;
+    height: 120px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &-form-comment {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+
+  &-checkbox-wrapper {
+    padding-top: 16px;
+    justify-content: center;
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
+    padding-bottom: 24px;
+  }
+
+  &-checkbox-input {
+    margin-right: 8px;
+  }
+
+  &-checkbox-link {
+    line-height: 133%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--iris);
+  }
+
+  &-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+
+  &-button {
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--iris);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--white);
+  }
+
+  @media (min-width: 768px) {
+    & {
+      width: 408px;
+    }
+  }
+  @media (min-width: 1440px) {
+    & {
+      width: 29.5%;
+    }
+  }
+}

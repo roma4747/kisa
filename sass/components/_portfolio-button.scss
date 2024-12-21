@@ -1,0 +1,37 @@
+.button-section {
+  &-active {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--white);
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 53px;
+    height: 40px;
+    background: var(--ocean);
+  }
+
+  &-un-active {
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 8px 16px;
+    background: var(--cloud);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--iris);
+  }
+
+  @media (min-width: 768px) {
+    &-active {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 1px 0 rgba(0, 0, 0, 0.08);
+    }
+  }
+}
